@@ -1,0 +1,147 @@
+body, html {
+  background-color: #dbc396;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header-container {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.container-header {               /* */
+  display: flex;
+}
+
+/*section {
+  background-color: #C2C7D2;
+}*/
+
+.container {
+ /* border: 5px solid #B88964;*/
+  color: #dbc396;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo-image {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.center-image {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-images1 {
+  /*background-color: #304162;*/
+  flex: 1;
+}
+
+.portfolio-images2 {
+  /*background-color: #275A57;*/
+  flex: 1;
+}
+
+.portfolio-images3 {
+  /*background-color: #936440;*/
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:link {
+  color: #333;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  color: white;
+}
+
+.name-role {
+  display: flex;
+  flex-basis: center;
+  flex-direction:column;
+  align-items: flex-end;
+}
+
+h1 {
+  text-align: right;
+  display: inline-block;
+}
+
+p {
+  font-size: .75em;
+}
+
+.made-by {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-on-right {
+  align-items: flex-end;
+}
+
+/*.role {
+  text-align: right;
+  display: inline;
+}*/
+
+hr {
+   border: 0;
+   height: 4px;
+   background: #b88964;
+}
+
+@media screen and (max-width: 499px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-images1, .portfolio-images2, .portfolio-images3 {
+    flex: 1 1 100%
+  } 
+}
+
+ @media screen and (min-width: 500px) and (max-width: 750px) {
+   .container {
+     flex-wrap: wrap;
+   }
+   
+  .portfolio-images1, .portfolio-images2, .portfolio-images3 {
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo-image {
+    width: 35%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   .header-container {
+     flex-wrap: wrap;
+   }
+  
+  .name-role, .logo-image, {
+    flex: 1 1 100%;
+  }
+}
